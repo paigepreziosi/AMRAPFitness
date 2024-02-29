@@ -24,12 +24,12 @@
 ## 5. Installation
 
 
-## Credits
+## 6. Credits
 
 
-## License
+## 7. License
 
 N/A
 
-## Contact
+## 8. Contact
 
