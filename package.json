@@ -1,21 +1,22 @@
 {
-  "name": "project3amap",
+  "name": "project3",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Table of Contents 1. Project Description 2. User Story 3. Acceptance Critera 4. Programs Used 5. Installation 6. Credits 7. License 8. Contact",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
-    "dev": "nodemon index",
-    "seed": "node utils/seed"
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
-  "license": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "mongoose": "^7.0.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.9"
+    "mongodb": "^6.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-script": "^2.0.5"
   }
 }
