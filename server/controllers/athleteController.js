@@ -50,25 +50,13 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Delete an athlete and remove them from the workout
+  // Delete an athlete 
   async deleteAthlete(req, res) {
     try {
       const athlete = await Athlete.findOneAndRemove({ _id: req.params.athleteId });
 
       if (!athlete) {
         return res.status(404).json({ message: 'No such athlete exists' });
-      }
-
-      const workout = await Workout.findOneAndUpdate(
-        { athletes: req.params.athleteId },
-        { $pull: { athletes: req.params.athleteId } },
-        { new: true }
-      );
-
-      if (!workout) {
-        return res.status(404).json({
-          message: 'Athlete deleted, but no workouts found',
-        });
       }
 
       res.json({ message: 'Athlete successfully deleted' });
@@ -78,15 +66,15 @@ module.exports = {
     }
   },
 
-  // Add an exercise to an athlete
-  async addExercise(req, res) {
-    console.log('You are adding an exercise');
+  // Add a workout to an athlete
+  async addWorkout(req, res) {
+    console.log('You are adding a workout');
     console.log(req.body);
 
     try {
       const athlete = await Athlete.findOneAndUpdate(
         { _id: req.params.athleteId },
-        { $addToSet: { exercises: req.body } },
+        { $addToSet: { workouts: req.body } },
         { runValidators: true, new: true }
       );
 
@@ -101,12 +89,12 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Remove exercise from an athlete
-  async removeExercise(req, res) {
+  // Remove a workout from an athlete
+  async removeWorkout(req, res) {
     try {
       const athlete = await Athlete.findOneAndUpdate(
         { _id: req.params.athleteId },
-        { $pull: { exercise: { exerciseId: req.params.exerciseId } } },
+        { $pull: { workout: { workoutId: req.params.workoutId } } },
         { runValidators: true, new: true }
       );
 
