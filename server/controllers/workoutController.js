@@ -68,4 +68,47 @@ module.exports = {
       res.status(500).json(err);
     }
   },
+  // Add an exercise to a workout
+  async addExercise(req, res) {
+    console.log('You are adding an exercise');
+    console.log(req.body);
+
+    try {
+      const workout = await Workout.findOneAndUpdate(
+        { _id: req.params.workoutId },
+        { $addToSet: { exercises: req.body } },
+        { runValidators: true, new: true }
+      );
+
+      if (!workout) {
+        return res
+          .status(404)
+          .json({ message: 'No workout found with that ID :(' });
+      }
+
+      res.json(workout);
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  },
+  // Remove exercise from an workout
+  async removeExercise(req, res) {
+    try {
+      const workout = await Workout.findOneAndUpdate(
+        { _id: req.params.workoutId },
+        { $pull: { exercise: { exerciseId: req.params.exerciseId } } },
+        { runValidators: true, new: true }
+      );
+
+      if (!workout) {
+        return res
+          .status(404)
+          .json({ message: 'No workout found with that ID :(' });
+      }
+
+      res.json(workout);
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  },
 };
