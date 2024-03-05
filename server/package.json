@@ -1,0 +1,23 @@
+{
+  "name": "Project3",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index",
+    "watch": "nodemon",
+    "seed": "node utils/seed"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.7.1",
+    "bcrypt": "^5.0.0",
+    "express": "^4.17.2",
+    "graphql": "^16.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^7.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
