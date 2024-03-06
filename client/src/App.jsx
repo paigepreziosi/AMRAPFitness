@@ -1,15 +1,22 @@
+import { Outlet } from 'react-router-dom';
 import './App.css';
-import ExerciseSchedule from './components/ExerciseSchedule';
+import ExerciseForm from './components/ExerciseForm';
 import Navbar from './components/Nav';
+import Footer from './components/Footer/index.jsx';
+
 
 function App() {
 
   return (
+  <div className='"page-container'>
+    <div className='content-wrap'>
 
-    <div>
-      
+    </div>
+     <div className="bg" > 
       <Navbar/>
-      <ExerciseSchedule/>
+      <ExerciseForm/>
+      </div>
+      <Footer />
     </div>
   );
 }
