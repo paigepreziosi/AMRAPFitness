@@ -1,24 +1,28 @@
-import { Outlet } from 'react-router-dom';
-import './App.css';
-import ExerciseForm from './components/ExerciseForm';
-import Navbar from './components/Nav';
-import Footer from './components/Footer/index.jsx';
 
+// import { Outlet } from 'react-router-dom';
+import React from 'react';
+import Dashboard from './components/Dashboard';
+import backgroundImage from '../images/background.jpg';
+import Footer from './components/Footer/';
 
-function App() {
+const divStyle = {
+  backgroundImage: `url(${backgroundImage})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  height: '100vh',
+};
 
+const App = () => {
   return (
-  <div className='"page-container'>
-    <div className='content-wrap'>
-
+    <div style={divStyle}>
+      <Dashboard />;
+      {/* <Outlet />; */}
+      <Footer />;
     </div>
-     <div className="bg" > 
-      <Navbar/>
-      <ExerciseForm/>
-      </div>
-      <Footer />
-    </div>
+    
   );
-}
+};
+
 
 export default App;

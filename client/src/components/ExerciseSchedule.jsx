@@ -1,7 +1,9 @@
+import React from "react";
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 import ExerciseForm from './ExerciseForm';
-import Nav from './Nav/index.jsx';
-import Exercise from './Exercise';
+// import Nav from './Nav/index.jsx';
+import Exercise from './ExerciseComponent.jsx';
 
 function ExerciseSchedule() {
   const [Exercise, setExercise] = useState([]);
