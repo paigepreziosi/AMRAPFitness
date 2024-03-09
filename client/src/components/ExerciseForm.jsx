@@ -1,5 +1,7 @@
+import React from "react";
 import { useState } from 'react';
-import Exercise from './Exercise';
+import { Link } from "react-router-dom";
+import ExerciseComponent from './ExerciseComponent';
 
 function ExerciseForm(props) {
     const [edit, setEdit] = useState({

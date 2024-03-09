@@ -1,4 +1,6 @@
+import React from "react";
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 import ExerciseSchedule from './ExerciseSchedule';
 
 function Exercise(props) {
