@@ -28,7 +28,7 @@ As a user, I want to be able to log workouts, save them, and interact with my co
 
 ## 4. Installation
 - Clone the repository 
-- CD to the file, Project3
+- CD to the file, AMRAPFitness
 - Open the terminal
 - CD to the client
 - npm install
