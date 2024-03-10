@@ -4,9 +4,9 @@ import React from "react";
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-      <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div className="container-fluid">
+      <a className="navbar-brand" href="#">Navbar</a>
     <ul className="nav nav-tabs">
 
       <li className="nav-item">
