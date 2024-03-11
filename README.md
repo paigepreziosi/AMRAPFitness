@@ -1,4 +1,10 @@
-# Project3
+# AMRAPFITNESS
+
+<img width="1030" alt="Screenshot 2024-03-10 at 8 13 41 PM" src="https://github.com/paigepreziosi/AMRAPFitness/assets/151070992/cc96fef9-8fe6-4f63-9167-58db94dc0e64">
+<img width="1060" alt="Screenshot 2024-03-10 at 8 14 07 PM" src="https://github.com/paigepreziosi/AMRAPFitness/assets/151070992/ff8aa09b-f6bd-4b8b-a1f7-970b65cf47ee">
+<img width="1059" alt="Screenshot 2024-03-10 at 8 13 49 PM" src="https://github.com/paigepreziosi/AMRAPFitness/assets/151070992/eab4f863-36ec-4c5c-a032-da93ad33f192">
+<img width="1070" alt="Screenshot 2024-03-10 at 8 12 40 PM" src="https://github.com/paigepreziosi/AMRAPFitness/assets/151070992/d99726e2-7755-46dd-8720-1a0f61845382">
+
 
 ## Table of Contents
 1. Project Description
